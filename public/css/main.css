@@ -1,0 +1,97 @@
+/* main css */
+
+.container {
+  max-width: 28rem;
+}
+@media (min-width: 38em) {
+  .container {
+    max-width: 32rem;
+  }
+}
+@media (min-width: 56em) {
+  .container {
+    max-width: 38rem;
+  }
+}
+
+
+.home-bottom {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.home-block {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.home-img-container {
+  display: flex;
+  justify-content: center;
+
+  img {
+    border-radius: 50%;
+  }
+}
+
+.home-text {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.home-links {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.home-link-item {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+
+/* for menu */
+.float-sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f9fa;  /* Light background color */
+  padding: 16px 0;
+  z-index: 1000;  /* Ensure menu stays on top */
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: row;  /* Changed to row for horizontal layout */
+  justify-content: center;  /* Center items horizontally */
+  align-items: center;
+  width: 100%;
+  gap: 20px;  /* Space between menu items */
+}
+
+.menu-item {
+  display: inline-block;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #333;
+  padding: 16px 20px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.menu-item a:hover {
+  background-color: #e9ecef;
+}
+
+.menu-item i {
+  margin-right: 8px;
+}
+
+/* Add padding to body to prevent content from hiding under fixed menu */
+body {
+  padding-top: 60px;
+}

@@ -1,0 +1,21 @@
+# Setup
+title:               Yueting Chen
+tagline:             'homepage'
+description:         'Yueting Chen Personal Website'
+url:                 http://lanyon.getpoole.com
+baseurl:             ''
+paginate:            5
+permalink:           pretty
+
+# About/contact
+author:
+  name:              Yueting Chen
+  url:               https://ytchen.me
+  email:             ychen24 [at] seattleu [dot] edu
+
+# Gems
+plugins:
+  - jekyll-paginate
+
+# Custom vars
+google_analytics_id: #UA-XXXX-Y
