@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Yueting Chen</title>
- <link href="http://ytchen.me/atom.xml" rel="self"/>
- <link href="http://ytchen.me/"/>
- <updated>2024-11-21T18:44:42-06:00</updated>
- <id>http://ytchen.me</id>
+ <link href="https://ytchen.me/atom.xml" rel="self"/>
+ <link href="https://ytchen.me/"/>
+ <updated>2024-11-21T18:58:00-06:00</updated>
+ <id>https://ytchen.me</id>
  <author>
    <name>Yueting Chen</name>
    <email>ychen24 [at] seattleu [dot] edu</email>
