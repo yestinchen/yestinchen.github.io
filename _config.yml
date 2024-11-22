@@ -2,7 +2,7 @@
 title:               Yueting Chen
 tagline:             'homepage'
 description:         'Yueting Chen Personal Website'
-url:                 http://ytchen.me
+url:                 https://ytchen.me
 baseurl:             ''
 paginate:            5
 permalink:           pretty
