@@ -1,0 +1,41 @@
+---
+---
+<div class="bibliography-item">
+  {% assign authors = entry.author | split: " and " %}
+  <div class="authors">
+    {% for author in authors %}
+      {% assign author_size = authors | size %}
+      {% assign author_index = forloop.index %}
+      {% assign name_parts = author | split: ", " %}
+      {% assign display_name = name_parts[1] | append: " " | append: name_parts[0] %}
+
+      {% if display_name contains 'Yueting Chen' %}
+        <span class="author highlight-author">{{ display_name }}</span>
+      {% else %}
+        <span class="author">{{ display_name }}</span>
+      {% endif %}
+
+      {% if author_index < author_size %}
+        {% if author_index == author_size | minus: 1 %}
+          <span> and </span>
+        {% else %}
+          <span>, </span>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="title">{{ entry.title }}</div>
+
+  {% if entry.journal %}
+    <div class="journal">{{ entry.journal }}</div>
+  {% endif %}
+
+  {% if entry.booktitle %}
+    <div class="booktitle">{{ entry.booktitle }}</div>
+  {% endif %}
+
+  {% if entry.year %}
+    <div class="year">{{ entry.year }}</div>
+  {% endif %}
+</div>

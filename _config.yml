@@ -16,6 +16,16 @@ author:
 # Gems
 plugins:
   - jekyll-paginate
+  - jekyll-scholar
+
+scholar:
+  style: apa
+  locale: en
+  sort_by: year,month
+  order: descending
+  source: _data
+  bibliography: publications.bib
+  bibliography_template: bibliography
 
 # Custom vars
 google_analytics_id: #UA-XXXX-Y

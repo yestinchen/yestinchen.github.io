@@ -1,0 +1,12 @@
+<div class="teaching-container">
+  {% assign courses = site.data.teaching | sort: 'year' | reverse %}
+
+  {% for course in courses %}
+    <div class="teaching-entry">
+      <span class="teaching-year">{{ course.year }}</span>
+      <span class="teaching-quarter">{{ course.quarter }}</span>
+      <span class="teaching-code">{{ course.code }}</span>
+      <span class="teaching-name">{{ course.name }}</span>
+    </div>
+  {% endfor %}
+</div>

@@ -21,7 +21,8 @@ title: Home
 </div>
 
 <div class="home-links">
-  <div class="home-link-item"><a href="{{ '/publications' | absolute_url }}">Publications</a></div>
+  <div class="home-link-item"><a href="{{ '#teaching' | absolute_url }}">Teaching</a></div>
+  <div class="home-link-item"><a href="{{ '#publications' | absolute_url }}">Publications</a></div>
   <div class="home-link-item"><a href="{{ '/public/files/CV.pdf' | absolute_url }}">CV</a></div>
 </div>
 
@@ -42,6 +43,19 @@ Prior to that, I received my B.S. in Software Engineering in 2014 and M.S. in Co
 
 I am looking for self-motivated students, if you are interested in the same research topics, feel free to drop me an email with your CV. -->
 
+
+<h3 class="section-heading" id="teaching">Teaching</h3>
+
+{% assign courses = site.data.teaching %}
+{% include teaching.html courses=courses %}
+
+
+<h3 class="section-heading" id="publications">Publications</h3>
+
+
+<div class="publications-container">
+  {% bibliography %}
+</div>
 
 
 </div>
