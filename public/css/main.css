@@ -1,16 +1,18 @@
 /* main css */
-
+body{
+  padding-top: 10px;
+}
 .container {
   max-width: 28rem;
 }
 @media (min-width: 38em) {
   .container {
-    max-width: 32rem;
+    max-width: 34rem;
   }
 }
 @media (min-width: 56em) {
   .container {
-    max-width: 38rem;
+    max-width: 42rem;
   }
 }
 
@@ -150,4 +152,74 @@ h3.section-heading {
 
 .color-highlight {
   color: #e64f4f;
+}
+
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scroll offset to account for fixed header */
+#publications {
+  scroll-margin-top: 80px;  /* Adjust this value based on your header height + desired padding */
+}
+
+.highlight-author {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.bibliography-item {
+  margin-bottom: 1em;
+}
+
+.title {
+  margin-top: 0em;
+}
+
+.journal, .booktitle {
+  font-style: italic;
+}
+
+/* Teaching section styles */
+.teaching-container {
+  margin: 20px 0;
+}
+
+.teaching-entry {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.teaching-year {
+  min-width: 60px;
+  font-weight: bold;
+}
+
+.teaching-quarter {
+  min-width: 80px;
+  color: #666;
+}
+
+.teaching-code {
+  min-width: 100px;
+  font-family: monospace;
+}
+
+.teaching-name {
+  flex-grow: 1;
+}
+
+@media (max-width: 576px) {
+  .teaching-entry {
+    flex-wrap: wrap;
+  }
+
+  .teaching-name {
+    width: 100%;
+    margin-left: 155px; /* Aligns with other entries */
+  }
 }
