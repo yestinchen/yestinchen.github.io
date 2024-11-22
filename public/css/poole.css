@@ -48,7 +48,7 @@ body {
 }
 
 html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -82,7 +82,8 @@ a:focus {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
-  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
   line-height: 1.25;
   color: #313131;
   text-rendering: optimizeLegibility;
@@ -389,7 +390,7 @@ tbody tr:nth-child(odd) th {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   color: #ccc;
   text-align: center;
 }
