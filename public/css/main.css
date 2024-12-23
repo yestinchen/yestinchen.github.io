@@ -15,7 +15,16 @@ body{
     max-width: 42rem;
   }
 }
-
+@media (min-width: 64em) {
+  .container {
+    max-width: 56rem;
+  }
+}
+@media (min-width: 76em) {
+  .container {
+    max-width: 64rem;
+  }
+}
 
 .home-bottom {
   font-size: 0.8rem;
