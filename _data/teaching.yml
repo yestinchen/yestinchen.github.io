@@ -3,6 +3,11 @@
   code: CPSC 5021
   name: Database Systems
 
+- year: 2025
+  quarter: Winter
+  code: CPSC 5200
+  name: SW Architecture and Design
+
 # - year: 2024
 #   quarter: Winter
 #   code: CPSC 2430
