@@ -1,6 +1,8 @@
 /* main css */
 body{
   padding-top: 10px;
+  /* some space for bottom */
+  padding-bottom: 40px;
 }
 .container {
   max-width: 28rem;
